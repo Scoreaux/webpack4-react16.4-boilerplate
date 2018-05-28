@@ -1,0 +1,43 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "valid-jsdoc": ["error", {
+      "requireReturn": true,
+      "requireReturnType": true,
+      "requireParamDescription": true,
+      "requireReturnDescription": true
+    }],
+    "require-jsdoc": ["error", {
+        "require": {
+            "FunctionDeclaration": false,
+            "MethodDefinition": false,
+            "ClassDeclaration": false
+        }
+    }],
+    "prefer-stateless-function": "off",
+    "react/prop-types": [0, {}],
+    "disallowTabs": [0,{}],
+    "no-underscore-dangle": "off",
+    "import/extensions": "off",
+    "import/first": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "jsx-a11y/label-has-for": [ 0, {
+      "components": [],
+      "required": {
+        "every": [ "nest" ]
+      },
+      "allowChildren": false
+    }]
+  }
+}
