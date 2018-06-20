@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import styles from './App.scss';
+
 class App extends Component {
   state = {
     count: 0,
@@ -14,7 +16,9 @@ class App extends Component {
   render() {
     const { count } = this.state;
     return (
-      <div onClick={this.increment}>Counter is at {count}</div>
+      <div className={styles.container} onClick={this.increment}>
+        Counter is at {count}
+      </div>
     );
   }
 }
